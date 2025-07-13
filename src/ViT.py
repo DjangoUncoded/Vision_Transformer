@@ -43,7 +43,7 @@ test_dataloader=DataLoader(test_dataset,batch_size=32,shuffle=True)
 
 
 
-device="cuda"
+device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 #This class contains all the Hyper Parameters that will be passed on to the encoder
 class Config:
     patch_size=4
