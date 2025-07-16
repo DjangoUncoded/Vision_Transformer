@@ -5,7 +5,7 @@ from torchvision import transforms,datasets
 import math
 
 
-from Data_Transforms import *
+from .Data_Transforms import *
 
 #Loading Data Using ImageFolder from PyTorch
 train_dataset=datasets.ImageFolder(root="../data/Training",transform=train_transform)

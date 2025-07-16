@@ -3,20 +3,7 @@ name: CI/CD Pipeline
 on: [push]
 
 jobs:
-  check:
-       name: Debug file structure
-       run: |
-           pwd
-           ls -la
-           ls -la data/ || echo "data directory not found"
-           ls -la files/ || echo "files directory not found"
-      
- 
-  
-  
-  
-  
-  
+
   test:
     runs-on: ubuntu-latest
     steps:
@@ -32,8 +19,8 @@ jobs:
 
       - name: Run tests
         run: |
-            cd ./src
-            python ViT.py
+            
+            python src.ViT.py
             sleep 5 
             pytest tests/test.py -v
 
