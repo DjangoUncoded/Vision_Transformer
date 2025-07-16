@@ -27,9 +27,9 @@ jobs:
       - name: Run tests
         run: |
             
-            python src.ViT.py
+            python -m src.ViT
             sleep 5 
-            pytest tests.test.py -v
+            pytest tests/test.py -v
 
   deploy:
     needs: test
