@@ -3,7 +3,18 @@ name: CI/CD Pipeline
 on: [push]
 
 jobs:
+<<<<<<< HEAD
 
+=======
+ 
+      
+ 
+  
+  
+  
+  
+  
+>>>>>>> fdb71cdaca8e99af3b20e97bfd1e76e6ab65c49f
   test:
     runs-on: ubuntu-latest
     steps:
@@ -20,7 +31,11 @@ jobs:
       - name: Run tests
         run: |
             
+<<<<<<< HEAD
             python src.ViT.py
+=======
+            python -m src.ViT
+>>>>>>> fdb71cdaca8e99af3b20e97bfd1e76e6ab65c49f
             sleep 5 
             pytest tests/test.py -v
 
