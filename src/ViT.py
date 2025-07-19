@@ -279,7 +279,7 @@ loss_fn = nn.CrossEntropyLoss()
 scaler = torch.amp.GradScaler()
 
 
-model.load_state_dict(torch.load("../files/ViT.pth"))
+model.load_state_dict(torch.load("..files.ViT.pth"))
 
 
 

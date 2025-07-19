@@ -20,10 +20,8 @@ jobs:
       - name: Run tests
         run: |
             
-            python -m src.ViT
-
-            sleep 5 
-            pytest tests/test.py -v
+            
+            pytest tests.test.py -v
 
   deploy:
     needs: test
