@@ -8,8 +8,8 @@ import math
 from .Data_Transforms import *
 
 #Loading Data Using ImageFolder from PyTorch
-train_dataset=datasets.ImageFolder(root="../data/Training",transform=train_transform)
-test_dataset=datasets.ImageFolder(root="../data/Testing",transform=test_transform)
+train_dataset=datasets.ImageFolder(root="..data.Training",transform=train_transform)
+test_dataset=datasets.ImageFolder(root="..data.Testing",transform=test_transform)
 
 
 
